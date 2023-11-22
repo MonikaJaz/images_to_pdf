@@ -21,8 +21,8 @@ def merge_images_to_pdf(input_folder, output_pdf):
         pdf.image(image_path, 0, 0, pdf.w, pdf.h)
 
 
-    script_directory = os.path.dirname(os.path.abspath(__file__))
-    output_pdf_path = os.path.join(script_directory, output_pdf)
+   # script_directory = os.path.dirname(os.path.abspath(__file__))
+    output_pdf_path = os.path.join(input_folder, output_pdf)
 
     pdf.output(output_pdf_path, "F")
 
